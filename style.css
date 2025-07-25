@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 #tabel{
-  width: 700px;
-  height: 300px;
+  width: 600px;
+  height: 500px;
   border: none;
   box-sizing: border-box;
   padding: 30px;
@@ -15,21 +15,21 @@
 }
 
 td{
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   border: 1px solid black;
   border-radius: 16px;
-  width: 140px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
   margin: 10px;
 }
 
 #rezultat{
   background-color: rgb(209, 255, 255);
-  width: 610px;
-  height: 100px;
+  width: 510px;
+  height: 80px;
   border-radius: 20px;
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -38,8 +38,8 @@ td{
 }
 
 #rezultat-container{
-  width: 700px;
-  height: 200px;
+  width: 600px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
