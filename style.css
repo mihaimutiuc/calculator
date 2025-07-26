@@ -6,12 +6,12 @@
 #tabel{
   width: 600px;
   height: 500px;
-  border: none;
-  box-sizing: border-box;
+  border: 1px solid rgb(135, 135, 135);
   padding: 30px;
   border-spacing: 20px;
   background: linear-gradient(to top, black, gray, black, black, gray);
   border-radius: 0 0 16px 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 td{
@@ -38,6 +38,7 @@ td{
 }
 
 #rezultat-container{
+  border: 1px solid rgb(135, 135, 135);
   width: 600px;
   height: 130px;
   display: flex;
@@ -45,6 +46,7 @@ td{
   align-items: center;
   background: linear-gradient(to bottom, black, gray);
   border-radius: 16px 16px 0 0;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #container{
@@ -77,9 +79,11 @@ td{
 
 #egal:hover{
   background: linear-gradient(to bottom, rgb(255, 255, 0), rgb(255, 128, 82));
-
+  box-shadow: 0 0 4px #ffffff;
 }
-
+td:hover{
+  box-shadow: 0 0 4px #ffffff;
+}
 .semne{
   background: linear-gradient(to bottom, white, rgb(199, 199, 199));
   color: black;
@@ -90,11 +94,57 @@ td{
 }
 
 .n{
-  transition: .3s;
   background: linear-gradient(to bottom, white, cyan);
 }
 
 .n:hover{
-  background: linear-gradient(to bottom, white, rgb(10, 187, 187));
+  background: linear-gradient(to bottom, white, rgb(8, 141, 141));
   box-shadow: 0 0 4px #ffffff;
+}
+
+@media(max-width: 600px){
+  #tabel{
+    width: 90%;
+    height: 200px;
+    border-spacing: 5px;
+  }
+  #rezultat{
+    width: 300px;
+    height: 50px;
+    font-size: 2rem;
+  }
+  #rezultat-container{
+    width: 90%;
+    height: 100px;
+  }
+  td{
+    width: 40px;
+    height: 50px;
+    font-size: 2rem;
+  }
+}
+
+@media(max-height: 600px){
+  #tabel{
+    width: 300px;
+    height: 150px;
+    border-spacing: 5px;
+    padding: 10px;
+  }
+  #rezultat{
+    width: calc(100% - 20px);
+    height: 50px;
+    font-size: 1.7rem;
+  }
+  #rezultat-container{
+    position: relative;
+    top: 2px;
+    width: 300px;
+    height: 90px;
+  }
+  td{
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
 }
