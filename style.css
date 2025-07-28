@@ -107,6 +107,7 @@ td:hover{
     width: 90%;
     height: 200px;
     border-spacing: 5px;
+    padding: 10px;
   }
   #rezultat{
     width: 300px;
